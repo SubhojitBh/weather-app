@@ -1,0 +1,125 @@
+*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #4c77b6;
+    --white-color: #fff;
+  }
+  
+  body {
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    background-color: #EEE;
+    background: url(Images/background.png) no-repeat center;
+    background-size: cover;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 400px;
+    border: 2px solid var(--white-color);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+    text-align: center;
+  }
+  
+  .city-weather, .no-city-found {
+    height: 10px;
+    overflow: hidden;
+    transition: height 0.75s ease;
+  }
+  
+  .no-city-found {
+    height: 300px;
+  }
+  
+  .city-weather {
+    height: 410px;
+  }
+  
+  .hidden {
+    height: 0;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px 10px 10px 20px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+  }
+  
+  .search-button {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .no-city-found img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .no-city-found p {
+    font-size: 24px;
+  }
+  
+  .city-weather .icon {
+    width: 170px;
+  }
+  
+  .city-weather .temperature {
+    font-size: 75px;
+    font-weight: 500;
+  }
+  
+  .city-weather .city {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  
+  .city-weather .detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+  }
+
+  .details .detail {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    text-align: left;
+  }
+
+
+  
+  .detail img {
+    width: 20px;
+  }
+  
+  .detail .value {
+    font-size: 24px;
+  }
+  

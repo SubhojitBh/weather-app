@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather App</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input class="search-input" id="searchInput" placeholder="Search...">
+            <button class="search-button" id="searchButton">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <div class="weather-container">
+            <div id="cityWeather" class="city-weather hidden">
+                <img class="icon" id="icon" alt="">
+                <h1 class="temperature" id="temperature"></h1>
+                <h2 class="city" id="city"></h2>
+                <div class="details">
+                    <div class="detail">
+                        <img src="Images/humidity.png">
+                        <div class="description">
+                            <p class="value" id="humidity"></p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img src="Images/wind.png">
+                        <div class="description">
+                            <p class="value" id="wind"></p>
+                            <p>Wind</p>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+            <div id="noCityFound" class="no-city-found hidden">
+                <img height = 200 px src="Images/location-not-found.png" alt="">
+                <p>Oops! Location not found!</p>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
